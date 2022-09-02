@@ -4,11 +4,9 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../img/kabul.png';
-import icono from '../img/carrito.png'
-import "../style/navbar.css";
-
-
+import logo from '../../img/kabul.png';
+import CartWidget from '../cartWidget/CartWidget.js';
+import "../../style/navbar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -46,13 +44,10 @@ const Nabvar = () => {
                 </NavDropdown>
                 <Nav.Link href="#action6" className="text-white" >¿QUIENES SOMOS?</Nav.Link>
                 <Nav.Link href="#action7" className="text-white" >CONTACTO</Nav.Link>
-
               </div>
             </Nav>
 
-            <div className="icono">
-              <img src={icono} alt="icono del carrito" style={{ width: "40px", height: "40px" }} />
-            </div>
+             <CartWidget> </CartWidget>
 
             <Form className="d-flex">
               <Form.Control

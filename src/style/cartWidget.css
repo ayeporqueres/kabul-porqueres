@@ -1,0 +1,18 @@
+.posicion{
+    position: relative;
+    
+}
+
+.carrito{
+    font-size: 40px;
+    color: white;
+    margin-right: 10px;
+}
+
+.notificacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+

@@ -1,10 +1,19 @@
-import Nabvar from './components/NavBar';
+import Nabvar from './components/navBar/NavBar.js';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
+
 
 
 const App = () => {
   return(
-  
-  <Nabvar/>
+    
+    
+   <> 
+   <Nabvar/>
+   <ItemListContainer/> 
+   </> 
+ 
+   
+ 
 );
 
 }
