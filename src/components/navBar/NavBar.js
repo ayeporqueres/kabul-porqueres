@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../../img/kabul.png';
 import CartWidget from '../cartWidget/CartWidget.js';
+import "../../style/itemCount.css"
 import "../../style/navbar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
