@@ -4,7 +4,7 @@ const productos = [
       imagen: "https://i.postimg.cc/52JFWVcN/Buy-directly-from-the-world-s-most-awesome-indie-brands-Or-open-a-free-online-store.jpg",
       titulo: "Buzo Trasher",
       talles: "x, xl, xxl",
-      colores: "Blanco, Negro, Rojo, Azul",
+      colores: "Blanco, Negro, Rojo, Azul, Naranja",
       precio: 3900,
     },
     {

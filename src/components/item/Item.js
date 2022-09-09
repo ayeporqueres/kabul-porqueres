@@ -1,27 +1,26 @@
-import React from "react";
 import "./Item.css";
+import React from "react";
+
 
 function Item({ imagenes, titulo, talles, colores, precio }) {
   return (
     <div className="itemCard">
       <div className="itemCard__btn">
-        <button title="Ver Detalle">
-          <img src={imagenes} alt={`imagen de ${titulo}`} />
-          <div className="detalle">
-            <p>Ver Detalle</p>
-          </div>
-        </button>
+        
+        <img src={imagenes} alt={`imagen de ${titulo}`} className="img"/>
+          <div className="verdetalle"> VER DETALLE </div>
+        
       </div>
 
       <div className="itemCard__title">
-        <h3>{`${titulo}`.toUpperCase()}</h3>
+        <h2>{`${titulo}`.toUpperCase()}</h2>
       </div>
       <div className="itemCard__description">
         <p>Talles: {talles}</p>
         <p>Colores: {colores}</p>
       </div>
       <div className="itemCard__precio">
-        <h3>Precio: ${precio}</h3>
+        <h3> ${precio}</h3>
       </div>
     </div>
   );

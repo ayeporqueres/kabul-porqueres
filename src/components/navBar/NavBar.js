@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Nabvar = () => {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="xl">
         <Container fluid className='colornav'>
           <img src={logo} alt="logo kabul" style={{ width: "188px", height: "150px" }} />
 

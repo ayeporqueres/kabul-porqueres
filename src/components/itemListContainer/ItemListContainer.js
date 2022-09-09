@@ -18,10 +18,10 @@ const ItemListContainer = () => {
     }, []);
 
     return (
-        <>
+        <main>
 
             <div>
-                <h1 style={{ color: "green" }}> ¡Bienvenido a Kabul! </h1>
+                <h1 style={{ color: "green" }}> ¡Bienvenido a Kabul! </h1> 
             </div>
 
             <ItemCount stock={5} inicial={1} onAdd={onAdd} />
@@ -30,7 +30,7 @@ const ItemListContainer = () => {
 
 
 
-        </>
+        </main>
     );
 }
 export default ItemListContainer;
