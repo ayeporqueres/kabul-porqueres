@@ -3,6 +3,7 @@ import ItemList from '../itemList/ItemList';
 import { useState, useEffect } from "react";
 import customFetch from "../../utils/CustomFetch";
 import productos from "../../utils/productos";
+import "./itemListContainer.css";
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
@@ -25,7 +26,7 @@ const ItemListContainer = () => {
             </div>
 
             <ItemCount stock={5} inicial={1} onAdd={onAdd} />
-            <h1>BUZOS</h1>
+            <h2 className="buzos"> BUZOS</h2>
             <ItemList items={datos} />
 
 
