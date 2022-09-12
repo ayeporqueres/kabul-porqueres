@@ -42,3 +42,16 @@
     --bs-btn-disabled-border-color:#00ff15 !important;
     --bs-gradient: none;
 }
+
+
+#nav2{
+  background-color: #00ff15;
+  margin-left: 300px;
+  
+}
+
+#nav3{
+  background-color: blue;
+
+
+}
