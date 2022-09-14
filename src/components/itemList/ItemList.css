@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 100;
-    width: 100%;
+    height: fit-content;
+    width: 95%;
     margin: 20px;
     padding: 5px;
     

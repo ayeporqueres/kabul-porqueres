@@ -44,14 +44,7 @@
 }
 
 
-#nav2{
-  background-color: #00ff15;
-  margin-left: 300px;
-  
-}
-
-#nav3{
-  background-color: blue;
-
-
+.barra{
+  padding: 20px;
+  color:#00ff15;
 }

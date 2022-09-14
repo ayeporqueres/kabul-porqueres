@@ -26,6 +26,7 @@ const Nabvar = () => {
                 <Nav.Link href="#action7" className="text-white" >ACCESORIOS</Nav.Link>
                 <Nav.Link href="#action7" className="text-white" >BUZOS</Nav.Link>
                 <Nav.Link href="#action7" className="text-white" >JOGGINS</Nav.Link>
+                <span className="barra">│</span>
                 <Nav.Link href="#action7" className="text-white"  id="nav2">CONTACTO</Nav.Link>
                 <Nav.Link href="#action7" className="text-white" id="nav3">INICIAR SESIÓN</Nav.Link>
 
