@@ -16,9 +16,9 @@ const ItemDetail = ({ item,flag}) => {
     </div>
     <div className='contenedor'>
       <h1 className='titulo'>{item.titulo}</h1>
-      <p className='detalle'>{item.detalle}</p>
-      <p className="talles">{item.talles}</p>
-      <p className="colores">{item.colores}</p>
+      <p className='detalle'>Sobre el producto:{item.detalle}</p>
+      <p className="talles">Talles:{item.talles}</p>
+      <p className="colores">Colores:{item.colores}</p>
       <p className='precio'> ${item.precio}</p>
     </div>
     <ItemCount stock={5} inicial={1} onAdd={onAdd} />
