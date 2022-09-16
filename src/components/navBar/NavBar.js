@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../img/kabul.png';
 import CartWidget from '../cartWidget/CartWidget.js';
+import { Link } from 'react-router-dom';
 import "../../style/itemCount.css"
 import "../../style/navbar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,7 +14,8 @@ const Nabvar = () => {
     <div>
       <Navbar bg="light" expand="xl">
         <Container fluid className='colornav'>
-          <img src={logo} alt="logo kabul" style={{ width: "188px", height: "150px" }} />
+
+          <Link to= '/'><img src={logo} alt="logo kabul" style={{ width: "188px", height: "150px" }} /></Link>
 
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -23,12 +25,12 @@ const Nabvar = () => {
               navbarScroll
             >
               <div className='nav'>
-                <Nav.Link href="#action7" className="text-white" >ACCESORIOS</Nav.Link>
-                <Nav.Link href="#action7" className="text-white" >BUZOS</Nav.Link>
-                <Nav.Link href="#action7" className="text-white" >JOGGINS</Nav.Link>
+                <Link to='/category/accesorios' className="text-white" >ACCESORIOS</Link>
+                <Link to='/category/buzos'className="text-white" >BUZOS</Link>
+                <Link to='/category/joggins' className="text-white" >JOGGINS</Link>
                 <span className="barra">│</span>
-                <Nav.Link href="#action7" className="text-white"  id="nav2">CONTACTO</Nav.Link>
-                <Nav.Link href="#action7" className="text-white" id="nav3">INICIAR SESIÓN</Nav.Link>
+                <Link href="#action7" className="text-white"  id="nav2">CONTACTO</Link>
+                <Link href="#action7" className="text-white" id="nav3">INICIAR SESIÓN</Link>
 
 
               </div>

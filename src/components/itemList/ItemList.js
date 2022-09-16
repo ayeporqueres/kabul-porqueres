@@ -12,12 +12,11 @@ function ItemList({ items }) {
 
       ? items.map((item) => (
         <Item
+          id= {item.id}
           key={item.id}
           imagenes={item.imagen}
           titulo={item.titulo}
-          talles={item.talles}
-          colores={item.colores}
-          precio={item.precio}
+          
         />
       ))
     : <p> cargando...</p>

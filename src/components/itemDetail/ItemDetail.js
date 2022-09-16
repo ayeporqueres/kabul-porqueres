@@ -16,12 +16,16 @@ const ItemDetail = ({ item,flag}) => {
     </div>
     <div className='contenedor'>
       <h1 className='titulo'>{item.titulo}</h1>
-      <p className='detalle'>Sobre el producto:{item.detalle}</p>
-      <p className="talles">Talles:{item.talles}</p>
-      <p className="colores">Colores:{item.colores}</p>
-      <p className='precio'> ${item.precio}</p>
+      <p className='detalle'>Sobre el producto: {item.detalle}</p>
+      <p className="talles">Talles: {item.talles}</p>
+      <p className="colores">Colores: {item.colores}</p>
+      <p className="stock">Stock: {item.stock}</p>
+      <p className='precio'> $ {item.precio}</p>
+      <ItemCount stock={5} inicial={1} onAdd={onAdd} />
     </div>
-    <ItemCount stock={5} inicial={1} onAdd={onAdd} />
+    
+    
+    
   </div>: <div>cargando</div>}</>
   );
 }

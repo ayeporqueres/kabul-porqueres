@@ -1,12 +1,14 @@
 .contador {
-    background-color: black;
-    width: fit-content;
+     background-color:rgba(201, 240, 144, 0.8) ; 
+    width: 250px;
+    height: 150px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: auto; 
+    border-radius: 10px;
 }
 
 .boton>button{
@@ -15,13 +17,13 @@
     margin: 10px;
     margin-bottom: 15px;
     border-radius: 20px;
-    background-color:rgba(112, 185, 4, 0.8);
+    background-color:rgba(144, 170, 104, 0.8);
 
 }
 
 /* From uiverse.io by @adamgiebl */
 .colorboton{
-    --green: #eaf0eb;
+    --green: #4b9e06;
     font-size: 15px;
     padding: 0.7em 2.7em;
     letter-spacing: 0.06em;
@@ -32,14 +34,14 @@
     transition: all 0.3s;
     line-height: 1.4em;
     border: 2px solid var(--green);
-    background: linear-gradient(to right, rgba(70, 238, 3, 0.432) 1%, transparent 40%,transparent 60% , rgba(70, 238, 3, 0.432) 100%);
+    background: linear-gradient(to right, rgba(134, 235, 134, 0.726) 1%, transparent 40%,transparent 60% , rgba(134, 235, 134, 0.726) 100%);
     color: var(--green);
-    box-shadow: inset 0 0 10px rgba(0, 250, 12, 0.932), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    box-shadow: inset 0 0 10px rgb(65, 122, 65), 0 0 9px 3px rgba(27, 253, 156, 0.1);
    }
    
    .colorboton:hover {
-    color: #86ff82;
-    box-shadow: inset 0 0 10px rgb(34, 253, 71), 0 0 9px 3px rgba(17, 247, 17, 0.726);
+    color: #296927;
+    box-shadow: inset 0 0 10px rgb(105, 252, 130), 0 0 9px 3px rgba(18, 26, 18, 0.904);
    }
    
    .colorboton:before {
@@ -50,7 +52,7 @@
     height: 100%;
     top: 0;
     transition: transform .4s ease-in-out;
-    background: linear-gradient(to right, transparent 1%, rgba(1, 230, 31, 0.507) 40%,rgba(1, 230, 31, 0.507) 60% , transparent 100%);
+    background: linear-gradient(to right, transparent 1%, rgba(194, 233, 199, 0.507) 40%,rgba(1, 230, 31, 0.507) 60% , transparent 100%);
    }
    
    .colorboton:hover:before {
@@ -59,5 +61,5 @@
 
 
    .numero{
-    color:white;
+    color:rgb(7, 7, 7);
    }

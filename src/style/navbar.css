@@ -6,19 +6,20 @@
     background-color: black;
 }
 
-.navbar-expand-xl .navbar-nav .nav-link{
+.navbar-expand-xl .navbar-nav link{
   color: white;
   margin: auto;
   
   
 }
 
-.navbar-nav .show>.nav-link{
+.navbar-nav .show> link{
   color: white !important; 
 }
 
 .nav{
   margin-left: 200px;
+  word-spacing: 2px;
   font-size: 20px;
 }
 

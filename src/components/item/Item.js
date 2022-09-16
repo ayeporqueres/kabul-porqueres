@@ -1,27 +1,29 @@
 import "./Item.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 
-function Item({ imagenes, titulo, talles, colores, precio }) {
+function Item({ imagenes, titulo,id}) {
+  let rutas = `/item/${id}`;
   return (
     <div className="itemCard">
+
+      
       <div className="itemCard__btn">
         
         <img src={imagenes} alt={`imagen de ${titulo}`} className="img"/>
-          <div className="verdetalle"> VER DETALLE </div>
+        <div className="itemCard__title">
         
+           <h2>{`${titulo}`.toUpperCase()}</h2>
+        </div> 
+          
+         <Link to= {rutas}> 
+           <div className="verdetalle"> VER DETALLE </div>
+        </Link>
       </div>
 
-      <div className="itemCard__title">
-        <h2>{`${titulo}`.toUpperCase()}</h2>
-      </div>
-      <div className="itemCard__description">
-        <p>Talles: {talles}</p>
-        <p>Colores: {colores}</p>
-      </div>
-      <div className="itemCard__precio">
-        <h3> ${precio}</h3>
-      </div>
+      
+     
     </div>
   );
 }
