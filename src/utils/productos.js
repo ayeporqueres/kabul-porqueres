@@ -3,8 +3,8 @@ const productos = [
     {
       id: 1,
       imagen: "https://i.postimg.cc/MTfGjPkF/Fashion-Alien-Monster-Pattern-Casual-Loose-Long-Sleeve-Hoodie.jpg",
-      titulo: "Buzo alien",
-      detalle: "Buzo unisex con corte holgado, cuello con capucha y cordon para un ajuste regulable, bolsillo tipo canguro. Hecho con tela de algodón  frisado.",
+      titulo: "BUZO ALIEN",
+      detalle: "Buzo unisex con corte holgado, cuello con capucha y cordon para un ajuste regulable, bolsillo tipo canguro. Hecho con tela de algodón  frisado. Talles: x,xl,xxl.",
       talles: "x, xl, xxl",
       colores: "Batik rosa, batik rojo, batik azul, batik amarillo.",
       stock: 10,
@@ -16,7 +16,7 @@ const productos = [
     {
       id: 2,
       imagen: "https://i.postimg.cc/ncJLCG33/Mens-Rose-Japanese-Character-Print-Cotton-Casual-Drawstring-Overhead-Hoodies.jpg",
-      titulo: "Buzo rose-japanese",
+      titulo: "BUZO ROSE-JAPANESE",
       detalle: "Buzo unisex con corte holgado, cuello con capucha y cordon para un ajuste regulable. Hecho con tela de algodón frisado.",
       talles: "x, xl, xxl",
       colores: "Blanco, negro, azul,rosa, naranja.",
@@ -29,7 +29,7 @@ const productos = [
     {
       id: 3,
       imagen: "https://i.postimg.cc/R0gW1ckK/buzobasic.jpg",
-      titulo: "Buzo basic",
+      titulo: "BUZO BASIC",
       detalle: "Buzo unisex con corte holgado, cuello con capucha y cordon para un ajuste regulable, bolsillo tipo canguro. Hecho con tela de algodón frisado o rustico.",
       talles: "x, xl, xxl",
       colores: "Blanco, negro, rosa, naranja, gris, verde, celeste, rojo, amarillo.",
@@ -40,7 +40,7 @@ const productos = [
     {
       id: 4,
       imagen: "https://i.postimg.cc/xCqc6XQ7/buzodragon.jpg",
-      titulo: "Buzo dragon",
+      titulo: "BUZO DRAGON",
       detalle: "Buzo unisex con corte holgado, cuello con capucha y cordon para un ajuste regulable, bolsillo tipo canguro. Hecho con tela de algodón frisado.",
       talles: "x, xl, xxl",
       colores: "Negro y blanco, celeste y violeta, verde y azul.",
@@ -50,7 +50,7 @@ const productos = [
     }, {
       id: 5,
       imagen: "https://i.postimg.cc/15XPCnX2/Aveuri-2022-Vintage-Square-Sunglasses-Women-Men-Shades-Classic-Sun-Glasses-Female-Male-Brand-Design.jpg",
-      titulo: "Lentes cuadrados",
+      titulo: "LENTES CUADRADOS",
       detalle: "",
       colores: "Negro, amarillo, azul, verde, rojo.",
       stock: 12,
@@ -59,7 +59,7 @@ const productos = [
     }, {
       id: 6,
       imagen: "https://i.postimg.cc/gcNmHqz3/descarga-19.jpg",
-      titulo: "Lentes redondos",
+      titulo: "LENTES REDONDOS",
       detalle: "",
       colores: "Negro, rojo, violeta, celeste.",
       stock: 8,
@@ -69,7 +69,7 @@ const productos = [
     {
       id: 7,
       imagen: "https://i.postimg.cc/Fs6v2rJR/Blank-Cotton-Bucket-Hat-Walmart-com.jpg",
-      titulo: "Piluso liso",
+      titulo: "PILUSO LISO",
       detalle: "",
       talles: "x, xl, xxl",
       colores: "Negro, blanco, rojo, violeta, gris, amarillo, verde.",
@@ -80,7 +80,7 @@ const productos = [
     {
       id: 8,
       imagen: "https://i.postimg.cc/HnZmWHZ6/descarga-18.jpg",
-      titulo: "Gorra Motor racing team",
+      titulo: "GORRA MOTOR RACING TEAM",
       detalle: "",
       colores: "Azul y bordó, verde militar y beige, celeste y negra",
       stock: 10,
@@ -90,7 +90,7 @@ const productos = [
     {
       id: 9,
       imagen: "https://i.postimg.cc/cJhxD6Pb/social.jpg",
-      titulo: "Joggins social",
+      titulo: "JOGGINS SOCIAL",
       detalle: "",
       talles: "x, xl, xxl",
       colores: "Negro, blanco, celeste, verde manzana, rojo.",
@@ -101,7 +101,7 @@ const productos = [
     {
       id: 10,
       imagen: "https://i.postimg.cc/B6S4Ws2w/batik.jpg",
-      titulo: "Joggins batik",
+      titulo: "JOGGINS BATIK",
       detalle: "",
       talles: "x, xl, xxl",
       colores: "Negro, celeste, violeta, amarillo, verde.",
@@ -112,7 +112,7 @@ const productos = [
     {
       id: 11,
       imagen: "https://i.postimg.cc/6q63hnHq/nirvana.jpg",
-      titulo: "Joggins nirvana",
+      titulo: "JOGGINS NIRVANA",
       detalle: "",
       talles: "x, xl, xxl",
       colores: "Negro, balanco, gris.",
@@ -123,7 +123,7 @@ const productos = [
     {
       id: 12,
       imagen: "https://i.postimg.cc/bJhdsKkQ/likeyou.jpg",
-      titulo: "Joggins like you",
+      titulo: "JOGGINS LIKE YOU",
       detalle: "",
       talles: "x, xl, xxl",
       colores: "Negro, blanco, verde, naranja,  azul.",

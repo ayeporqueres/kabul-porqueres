@@ -24,16 +24,16 @@ const Nabvar = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <div className='nav'>
-                <Link to='/category/accesorios' className="text-white" >ACCESORIOS</Link>
-                <Link to='/category/buzos'className="text-white" >BUZOS</Link>
-                <Link to='/category/joggins' className="text-white" >JOGGINS</Link>
+              <ul className='nav'>
+                <li><Link to='/category/accesorios' className="text-white link" >ACCESORIOS</Link></li>
+                <li><Link to='/category/buzos'className="text-white link" >BUZOS</Link></li>
+                <li><Link to='/category/joggins' className="text-white link" >JOGGINS</Link></li>
                 <span className="barra">│</span>
-                <Link href="#action7" className="text-white"  id="nav2">CONTACTO</Link>
-                <Link href="#action7" className="text-white" id="nav3">INICIAR SESIÓN</Link>
+                <li><Link href="#action7" className="text-white link"  id="nav2">CONTACTO</Link></li>
+                <li><Link href="#action7" className="text-white link" id="nav3">INICIAR SESIÓN</Link></li>
 
 
-              </div>
+              </ul>
               
 
 

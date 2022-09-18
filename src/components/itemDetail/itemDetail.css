@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 .imagen{
     background-color:rgba(201, 240, 144, 0.8) ; 
     height: 340px;
@@ -38,26 +40,37 @@ img{
 
 .titulo{
     text-align: center;
+   
     
 
 }
 
 .detalle{
+    font-family: Oswald;
+    font-size: 20px;
 
 }
 
 .talles{
+    font-family: Oswald;
+    font-size: 20px;
 
 }
 
 .colores{
+    font-family: Oswald;
+    font-size: 20px;
 
 }
 
 .precio{
+    font-family: Oswald;
+    font-size: 30px;
 
 }
 
 .stock{
+    font-family: Oswald;
+    font-size: 20px;
 
 }

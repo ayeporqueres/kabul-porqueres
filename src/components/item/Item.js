@@ -14,11 +14,11 @@ function Item({ imagenes, titulo,id}) {
         <img src={imagenes} alt={`imagen de ${titulo}`} className="img"/>
         <div className="itemCard__title">
         
-           <h2>{`${titulo}`.toUpperCase()}</h2>
+           <h2 className="titulocard">{`${titulo}`.toUpperCase()}</h2>
         </div> 
           
-         <Link to= {rutas}> 
-           <div className="verdetalle"> VER DETALLE </div>
+         <Link to= {rutas} className="verdetalle"> 
+           <div> VER DETALLE </div>
         </Link>
       </div>
 
