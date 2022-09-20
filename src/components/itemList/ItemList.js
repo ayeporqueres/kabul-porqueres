@@ -4,6 +4,7 @@ import "./ItemList.css";
 
 
 
+
 function ItemList({ items }) {
   return (
     <div className="cardContainer">
@@ -19,7 +20,9 @@ function ItemList({ items }) {
           
         />
       ))
-    : <p> cargando...</p>
+    : 
+    <p className="cargando"> cargando...</p>
+    
     }
     </div>
   );

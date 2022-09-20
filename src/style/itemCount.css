@@ -1,5 +1,5 @@
 .contador {
-     background-color:rgba(201, 240, 144, 0.8) ; 
+    background-color:rgba(201, 240, 144, 0.8) ; 
     width: 250px;
     height: 150px;
     padding: 10px;
@@ -9,6 +9,9 @@
     align-items: center;
     margin: auto; 
     border-radius: 10px;
+    position:absolute;
+    left: 57%;
+    top: 110%;
 }
 
 .boton>button{

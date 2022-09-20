@@ -10,9 +10,7 @@ const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
     const {categoryId} = useParams();
 
-    // const onAdd = (valor) => {
-    //     alert("Usted ha seleccionado " + valor + " productos")
-    // }
+   
 
     useEffect(() => {
         if (categoryId){
