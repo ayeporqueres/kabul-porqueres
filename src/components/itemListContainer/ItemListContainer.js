@@ -1,4 +1,3 @@
-
 import ItemList from '../itemList/ItemList';
 import { useState, useEffect } from "react";
 import customFetch from "../../utils/CustomFetch";
@@ -8,35 +7,28 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
-    const {categoryId} = useParams();
+    const { categoryId } = useParams();
 
-   
+
 
     useEffect(() => {
-        if (categoryId){
+        if (categoryId) {
             customFetch(2000, productos.filter(item => item.category == categoryId))
-             .then(result => setDatos(result))
-             .catch(err => console.log(err))
+                .then(result => setDatos(result))
+                .catch(err => console.log(err))
 
-        }else{
+        } else {
             customFetch(2000, productos)
-             .then(result => setDatos(result))
-             .catch(err => console.log(err))
+                .then(result => setDatos(result))
+                .catch(err => console.log(err))
         }
-        
+
     }, [categoryId]);
 
     return (
-        <main>
-
-            
-
-            
-            
+        <main> 
             <ItemList items={datos} />
-
-
-
+           
         </main>
     );
 }
