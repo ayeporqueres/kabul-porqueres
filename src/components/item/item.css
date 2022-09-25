@@ -1,3 +1,9 @@
+body{
+    background-image: url("https://i.postimg.cc/jjG7V3m4/fondo.jpg");
+    background-repeat: repeat;
+    
+} 
+
 .itemCard{
     height: 80vh;
     width: 260px;

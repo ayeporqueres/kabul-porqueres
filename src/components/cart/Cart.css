@@ -2,27 +2,32 @@
     background-color: rgb(12, 12, 12);
     height: 350px;
     width: 300px;
-    
     padding: 25px;
     float: right; 
     position: relative; 
     right: 500px;
 }
 
-.buttonremove{
-    background-color: blue;
-    padding: 5px;
-    float: right; 
-    position: relative; 
-    right: 200px;
-    margin:-250px;
-}
-
-.qty{
-    background-color: brown;
-    padding: 5px;
+.table{
+    background-color: white;
+    
+    padding: 20px;
     float: left; 
     position: relative; 
-    left: 100px;
-    margin:100px;
+    left: 500px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.titulocarrito{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgb(137, 224, 138);
+    
 }

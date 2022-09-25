@@ -12,10 +12,10 @@ const ItemDetail = ({ item, flag }) => {
   const [controlBoton, setControlBoton] = useState(true);
   const contexto = useContext (CartContext)
 
-  const onAdd = (valor,qty) => {
+  const onAdd = (valor) => {
     alert("Usted ha seleccionado " + valor + " productos");
     setControlBoton(false);
-    contexto.addItem(item,qty); 
+    contexto.addItem(item,valor) 
   }
 
   return (
