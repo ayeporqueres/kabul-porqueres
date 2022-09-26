@@ -12,33 +12,27 @@ const Cart = () => {
             <h1 className="titulocarrito"> TU CARRITO </h1>
 
             <button onClick={contexto.clear}> Borrar todos los productos</button>
-            {
-                contexto.cartList.map(item => <li>
-                    <div className='imgcarrito'>
-                        <img src={item.imagen} alt="" />
-                    
-                        <table className='table'>
-                        <tr>
-                            <td>
-                                <p>{item.titulo}</p>
-                                <p><button onClick={() => contexto.removeItem(item.id)}> borrar el producto</button> </p>
-                            </td>
+            <section>
+                {contexto.cartList.map(item =>
 
-                            <td>
-                                <p>Items: {item.quantity}</p>
-                                <p> $ {item.precio} </p>
-                                </td>
-                        </tr>
-                    </table>
-                    
-                    
-                    </div>
-                    
-                    
-                    
+                    <section>
+                        <div className='contenedor1'>
+                            <img src={item.imagen} alt="" />
+                             
+                            <div className="contenedor2" >{item.titulo}</div>
+                            <div className="contenedor2" >Cantidad: {item.quantity}</div>
+                            <div className="contenedor2">Precio ${item.precio} </div>
+                            <div className="contenedor2" ><button onClick={() => contexto.removeItem(item.id)}>❌</button> </div>
 
-                </li>)
-            }
+
+                        </div>
+                    </section>
+
+
+
+                )
+                }
+            </section>
         </>
     );
 
