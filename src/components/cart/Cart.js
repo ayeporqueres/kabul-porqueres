@@ -17,7 +17,7 @@ const Cart = () => {
 
                     <section>
                         <div className='contenedor1'>
-                            <img src={item.imagen} alt="" />
+                            <img src={item.imagen}  className="fotocarrito" alt="" />
                              
                             <div className="contenedor2" >{item.titulo}</div>
                             <div className="contenedor2" >Cantidad: {item.quantity}</div>
