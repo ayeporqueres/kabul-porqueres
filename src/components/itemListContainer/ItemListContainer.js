@@ -1,9 +1,10 @@
 import ItemList from '../itemList/ItemList';
 import { useState, useEffect } from "react";
-import customFetch from "../../utils/CustomFetch";
-import productos from "../../utils/productos";
 import "./itemListContainer.css";
 import { useParams } from 'react-router-dom';
+import { db } from '../../utils/firebaseConfig'
+import { collection, getDocs } from "firebase/firestore";
+
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
@@ -11,19 +12,18 @@ const ItemListContainer = () => {
 
 
 
-    useEffect(() => {
-        if (categoryId) {
-            customFetch(2000, productos.filter(item => item.category == categoryId))
-                .then(result => setDatos(result))
-                .catch(err => console.log(err))
-
-        } else {
-            customFetch(2000, productos)
-                .then(result => setDatos(result))
-                .catch(err => console.log(err))
-        }
-
-    }, [categoryId]);
+    useEffect( () => {
+        async function fetchData(){
+        const querySnapshot = await getDocs(collection(db, "productos"));
+        const dataFromFirestore = querySnapshot.docs.map(item => ({
+            id: item.id,
+            ...item.data()
+        }))
+        
+        setDatos(dataFromFirestore)
+    }
+  fetchData();
+},[categoryId]);
 
     return (
         <main> 
