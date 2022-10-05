@@ -22,7 +22,7 @@ const ItemDetail = ({ item, flag }) => {
     <>
       {flag ? <div>
         <div className='imagen'>
-          <img src={item.imagen} alt="" />
+           <img src={item.imagen} alt="" /> 
         </div>
         <div className='contenedor'>
           <h1 className='titulo'>{item.titulo}</h1>

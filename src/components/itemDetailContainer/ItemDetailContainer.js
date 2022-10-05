@@ -13,6 +13,7 @@ const ItemDetailContainer = () => {
           try {
               const docRef = doc(db, "productos", idItem)
               const docSnap = await getDoc(docRef);
+              console.log(docSnap.data())
               setDato(docSnap.data());
               setFlag(true);
           } catch (error) {
@@ -20,6 +21,7 @@ const ItemDetailContainer = () => {
           }
       }
       fetchData();
+      
   }, [idItem]);
   return (
       <ItemDetail item={dato} flag={flag} />

@@ -83,7 +83,7 @@ const productos = [
       titulo: "GORRA MOTOR RACING TEAM",
       detalle: "Gorra vintage de algodon con vicera.",
       colores: "Azul y bordó, verde militar y beige, celeste y negra.",
-      talle: "Unico, con hebilla de metal ajustable.",
+      talles: "Unico, con hebilla de metal ajustable.",
       stock: 10,
       category: "accesorios",
       precio: 2700,
