@@ -3,23 +3,20 @@ import {createContext, useState} from 'react'
 
 export const CartContext = createContext();
 
-const CartContextProvider = ({children}) => {
+const CartContextProvider = (props) => {
     const [cartList,setCartList] = useState ([])
 
-    const addItem = (item, quantity) => {
-      console.log(item, quantity)
+    function addItem(item, quantity) {
       if (!isInCart(item.id)) {    
-        setCartList([...cartList, {...item, quantity}]);
-    } else {
-        let arrayAux = [...cartList];
-        arrayAux[cartList.findIndex(el => el.id === item.id)].quantity += quantity;
-        setCartList([...arrayAux]);
+          setCartList([...cartList, {...item, quantity}]);
+      } else {
+          let arrayAux = [...cartList];
+          arrayAux[cartList.findIndex(el => el.id === item.id)].quantity += quantity;
+          setCartList([...arrayAux]);
+      }
     }
-        
-  }
-
-    const isInCart = (id) =>{
-      return cartList.some(item=> item.id === id)
+      function isInCart(id) {
+      return cartList.some(el => el.id === id) 
     }
       
 
@@ -44,7 +41,7 @@ const CartContextProvider = ({children}) => {
 
     return (
     <CartContext.Provider value={{cartList,addItem,clear, removeItem, cartWidget, totalCart}}>
-      { children }
+      { props.children }
     </CartContext.Provider>
 
 

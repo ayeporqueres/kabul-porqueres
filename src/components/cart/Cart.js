@@ -2,10 +2,62 @@ import { useContext } from "react";
 import { CartContext } from "../cartContext/CartContext";
 import { Link } from "react-router-dom";
 import "./Cart.css";
-
+import { getFirestore } from "../firebase/firebase.config";
 
 const Cart = () => {
     const {cartList,clear,removeItem, totalCart } = useContext(CartContext);
+    
+    const terminarCompra () {
+        let usuario = {
+            buyer: {
+                name: 'some user',
+                phone: '32132-133213-2132',
+                email: 'example@email.com'
+            },
+            items: cartList.map(item => {
+                return (
+                    {
+                        id: item.id,
+                        titulo: item.titulo,
+                        precio: item.precio,
+                        quantity: item.quantity
+                    }
+                );
+            }),
+            date: new Date(),
+            total: totalCart()
+        }
+        generarPedido(usuario);
+        actualizarStock();
+    }
+
+    const generarPedido(datosCompraTerminada) {
+        const db = getFirestore();
+        const itemCollection = db.collection("orders");
+        itemCollection.add(datosCompraTerminada)
+            .then(res => {
+                alert('Se generó un pedido con el id: ' + res.id)
+                clear();
+            })
+            .catch(err => console.log(err))
+    }
+
+    const actualizarStock() {
+        const db = getFirestore();
+        const itemCollection = db.collection("items");
+        itemCollection.get()
+            .then(res => {
+                res.forEach(item => {
+                    carrito.forEach(el => {
+                        if (item.data().id === el.id) {
+                            const consulta = doc(db, "items", item.id);
+                            updateDoc(consulta, { stock: el.stock - el.quantity });
+                        }
+                    });
+                });
+            })
+            .catch(error => console.log(error))
+    
     
     return (
 
@@ -26,9 +78,10 @@ const Cart = () => {
             
             
             <section>
-                {cartList.map(item =>
+                {cartList.map((item,i) => 
 
-                    <section>
+                    <section key={i}> 
+
                         <div className='contenedor1'>
                             <img src={item.imagen}  className="fotocarrito" alt="" />
                              

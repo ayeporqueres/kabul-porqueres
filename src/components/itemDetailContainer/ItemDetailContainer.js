@@ -6,33 +6,23 @@ import { db } from '../../utils/firebaseConfig'
 
 const ItemDetailContainer = () => {
   const [dato, setDato] = useState({});
+  const [flag, setFlag] = useState(false);
   const { idItem } = useParams()
-
-
-
   useEffect(() => {
-    async function fetchData() {
-      const docRef = doc(db, "productos", idItem)
-      const docSnap = await getDoc(docRef);
-
-      if (docSnap.exists()) {
-        return {
-          id: idItem,
-          ...docSnap.data()
-        }
-      } else {
-        console.log('no such document!')
+      async function fetchData() {
+          try {
+              const docRef = doc(db, "productos", idItem)
+              const docSnap = await getDoc(docRef);
+              setDato(docSnap.data());
+              setFlag(true);
+          } catch (error) {
+              console.log(error);
+          }
       }
-      setDato(docRef)
-    }
-    fetchData();
+      fetchData();
   }, [idItem]);
-
   return (
-    <ItemDetail item={dato} />
-
+      <ItemDetail item={dato} flag={flag} />
   )
-
 }
-
 export default ItemDetailContainer;
