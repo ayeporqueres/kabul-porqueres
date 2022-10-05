@@ -41,7 +41,8 @@ const Nabvar = () => {
 
 
 
-            <CartWidget> </CartWidget>
+            <Link to= '/cart'><CartWidget> </CartWidget></Link>
+
 
 
           </Navbar.Collapse>
