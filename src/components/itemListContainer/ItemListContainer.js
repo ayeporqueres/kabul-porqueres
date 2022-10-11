@@ -2,8 +2,7 @@ import ItemList from '../itemList/ItemList';
 import { useState, useEffect } from "react";
 import "./itemListContainer.css";
 import { useParams } from 'react-router-dom';
-import { db } from '../../utils/firebaseConfig'
-import { collection, getDocs } from "firebase/firestore";
+import { getFirestore } from '../../utils/firebaseConfig'
 
 
 const ItemListContainer = () => {
@@ -13,16 +12,34 @@ const ItemListContainer = () => {
 
 
     useEffect( () => {
-        async function fetchData(){
-        const querySnapshot = await getDocs(collection(db, "productos"));
-        const dataFromFirestore = querySnapshot.docs.map(item => ({
-            id: item.id,
-            ...item.data()
-        }))
         
-        setDatos(dataFromFirestore)
-    }
-  fetchData();
+        const db = getFirestore();
+        const itemCollection = db.collection("productos");
+        if (categoryId) {
+         
+            const item = itemCollection.where('category', '==', categoryId);
+            item.get()
+                .then(response => {
+                    if (response.docs.length === 0) {
+                        console.log('Archivo no encontrado.');
+                        return;
+                    }
+                    setDatos(response.docs);
+                   
+                })
+                .catch(error => console.log(error))
+        } else {
+            itemCollection.get()
+                .then(response => {
+                    if (response.size === 0) {
+                        console.log('Archivo no encontrado.');
+                        return;
+                    }
+                    setDatos(response.docs);
+                   console.log (response.docs)
+                })
+                .catch(error => console.log(error))
+        }
 },[categoryId]);
 
     return (

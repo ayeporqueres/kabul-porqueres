@@ -8,14 +8,16 @@ const CartContextProvider = (props) => {
 
     function addItem(item, quantity) {
       console.log (item,quantity)
-      console.log (isInCart(item.id)) 
-      if (!isInCart(item.id)) {    
-           setCartList([...cartList, {...item, quantity}]);
-       } else {
-          let arrayAux = [...cartList];
-          arrayAux[cartList.findIndex(el => el.id === item.id)].quantity += quantity;
-         setCartList([...arrayAux]);
-       }
+       console.log (isInCart(item.id)) 
+       if (!isInCart(item.id)) {  
+        console.log ("el producto no esta") 
+            setCartList([...cartList, {...item, quantity}]);
+        } else {
+           console.log ("el producto esta" )
+            let arrayAux = [...cartList];
+           arrayAux[cartList.findIndex(el => el.id === item.id)].quantity += quantity;
+           setCartList([...arrayAux]);
+        }
     }
       function isInCart(id) {
       return cartList.some(el => el.id === id) 
@@ -24,7 +26,7 @@ const CartContextProvider = (props) => {
 
     
     const clear= () =>{
-        setCartList ([])
+      setCartList ([])
     }
 
     const removeItem= (id) =>{

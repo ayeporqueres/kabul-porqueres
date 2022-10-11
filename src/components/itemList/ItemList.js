@@ -13,10 +13,10 @@ function ItemList({ items }) {
 
           ? items.map((item) => (
             <Item
-              id={item.id}
-              key={item.id}
-              imagenes={item.imagen}
-              titulo={item.titulo}
+              id={item.data().id}
+              key={item.data().id}
+              imagenes={item.data().imagen}
+              titulo={item.data().titulo}
 
             />
           ))

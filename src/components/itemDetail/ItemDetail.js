@@ -39,7 +39,7 @@ const ItemDetail = ({ item, flag }) => {
             controlBoton ?
 
               <ItemCount stock={item.stock} inicial={0} onAdd={onAdd} /> :
-              <Link to='/Cart' className="linkcarrito"> Ir al carrito de compras </Link>
+              <Link to='/cart' className="linkcarrito"> Ir al carrito de compras </Link>
           }
         </div>
 
